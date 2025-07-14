@@ -245,6 +245,11 @@ in
         example = "/run/keys/peertube/password-postgresql";
         description = "Password for PostgreSQL database.";
       };
+      ssl = lib.mkOption {
+        type = lib.types.bool;
+        default = false;
+        description = "Enable SSL for PostgreSQL database.";
+      };
     };
 
     redis = {
