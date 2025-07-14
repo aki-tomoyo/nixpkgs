@@ -388,6 +388,7 @@ in
           port = cfg.database.port;
           name = "${cfg.database.name}";
           username = "${cfg.database.user}";
+          ssl = cfg.database.ssl;
         };
         redis = {
           hostname = "${toString cfg.redis.host}";
